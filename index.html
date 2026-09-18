@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio">
+    <meta name="keywords" content="Portfolio, personal portfolio, web development">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- snake game link -->
+    <!-- https://snake-game-ruddy-zeta.vercel.app/ -->
+
+</head>
+<body>
+    <nav>
+        <h2 class="text navTitle">Portfolio</h2>
+        <a class="navNormal" href="#"><div class="navtext text">Home</div></a>
+        <a class="navNormal" href="#skills"><div class="navtext text">Skills</div></a>
+        <a class="navNormal" href="#proj"><div class="navtext text">Projects</div></a>
+        <a class="navNormal" href="#contact"><div class="navtext text">Contact</div></a>
+        <button class="dropDownButton" onclick="
+            const dropNav = document.getElementById('dropDownNav');
+            const toggleNav = dropNav.style.transform || 'translate(100%)';
+            console.log(toggleNav);
+            dropNav.style.transform = toggleNav === 'translate(100%)'?'translate(0%)':'translate(100%)';
+        "><img src="src/nav.svg" alt=""></button>
+        
+        <div class="dropDownNav" id="dropDownNav">
+            <a href="#"><div class="navDropText text">Home</div></a>
+            <a href="#skills"><div class="navDropText text">Skills</div></a>
+            <a href="#proj"><div class="navDropText text">Projects</div></a>
+            <a href="#contact"><div class="navDropText text">Contact</div></a>
+            
+        </div>
+
+    </nav>
+
+    <section class="home" id="#">
+
+        <!-- <div class="picProfile"></div> -->
+        <div class="greetmodal">
+
+                <h1 class="headText text">Hello, I am Dave.</h1>
+                <h1 class="titleText text">Aspiring Software Developer</h1>
+                <h6 class="subHeadText text">
+                    A fresh graduate passionate to learn and grow in software development and
+                    commited on collaborative development.
+                </h6>
+        </div>
+
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h1 class="text">Skills</h1>
+
+        <div class="skillset1">
+            <div class="skillcont html">
+                <img src="src/html.svg" alt="">
+                <h4 class="text">HTML</h4>
+            </div>
+            
+            <div class="skillcont css">
+                <img src="src/css.svg" alt="">
+                <h4 class="text">CSS</h4>
+            </div>
+            
+            <div class="skillcont jscript">
+                <img src="src/jscript.svg" alt="">
+                <h4 class="text">Javascript</h4>
+            </div>
+        </div>
+        <div class="skillset2">
+            <div class="skillcont react">
+                <img src="src/atom.svg" alt="">
+                <h4 class="text">ReactJS</h4>
+            </div>
+            
+            
+            <div class="skillcont nodejs">
+                <img src="src/hexagon.svg" alt="">
+                <h4 class="text">NodeJS</h4>
+            </div>
+        </div>
+        <div class="skillset3">
+            <div class="skillcont mysql">
+                <img src="src/database.svg" alt="">
+                <h4 class="text">MySQL</h4>
+            </div>
+            
+            <div class="skillcont git">
+                <img src="src/git.svg" alt="">
+                <h4 class="text">Git</h4>
+            </div>
+            
+            <div class="skillcont expressjs">
+                <img src="src/expressjs.svg" alt="">
+                <h4 class="text">Express JS</h4>
+            </div>
+                
+        </div>
+        
+    </section>
+
+    <section class="projects" id="proj">
+        <h1 class="text">Projects</h1>
+
+        <div class="project-grid">
+            <a href="https://snake-game-ruddy-zeta.vercel.app/" target="_blank" rel="noreferrer" class="project-card-link">
+                <article class="project-card">
+                    <h3 class="text">Snake Game</h3>
+                    <p class="text">A simple browser game project focused on JavaScript logic, user interaction, and responsive UI.</p>
+                </article>
+            </a>
+
+            <a href="" rel="noreferrer" class="project-card-link">
+                <article class="project-card">
+                    <h3 class="text">Coming Soon</h3>
+                    <p class="text">More projects and applications will be added here as I continue learning and building.</p>
+                </article>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-card">
+            <h1 class="text">Let’s connect</h1>
+            <p class="text contact-message">
+                I’m open to learning opportunities, collaboration, and software development roles where I can contribute,
+                grow, and keep building meaningful projects.
+            </p>
+
+            <form class="email-form" action="https://mail.google.com/mail/?view=cm&fs=1&to=daveespiritu1234@gmail.com" method="post" target="_blank">
+                <label class="text" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label class="text" for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+
+                <label class="text" for="message">Message</label>
+                <textarea id="message" name="body" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="submit-btn">Send via Gmail</button>
+            </form>
+
+            <div class="contact-links">
+                <a href="https://www.linkedin.com" class="contact-link text" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/Azel791" class="contact-link text" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content text">
+            <p>© 2026 Dave Espiritu</p>
+            <div class="footer-links">
+                <a href="mailto:daveespiritu1234@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.1-.25 6.9 5.3 6.9-5.3H5.1Zm14.15 1.5-6.9 5.3a1 1 0 0 1-1.3 0L4.75 8l-.02 9.25c0 .69.56 1.25 1.25 1.25h12.5c.69 0 1.25-.56 1.25-1.25L19.25 8Z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.62 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.92 0 3.46 1.92 3.46 4.42v4.61h-2.88v-4.31c0-1.02-.02-2.34-1.42-2.34-1.43 0-1.65 1.12-1.65 2.27v4.38H10.12V9.75Z"/></svg>
+                </a>
+                <a href="https://github.com/Azel791" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .75A11.25 11.25 0 0 0 8.3 22.1c.56.1.76-.24.76-.54v-1.9c-3.1.68-3.76-1.5-3.76-1.5-.5-1.3-1.24-1.65-1.24-1.65-.98-.7.07-.68.07-.68 1.08.08 1.65 1.14 1.65 1.14.96 1.68 2.52 1.2 3.13.92.1-.72.38-1.2.68-1.47-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.43-2.22 1.14-3-.11-.28-.5-1.43.11-2.98 0 0 .94-.3 3.08 1.15A10.8 10.8 0 0 1 12 6.9c.95 0 1.9.13 2.8.38 2.13-1.46 3.06-1.15 3.06-1.15.62 1.55.23 2.7.12 2.98.71.78 1.13 1.78 1.13 3 0 4.3-2.62 5.24-5.12 5.5.4.34.76 1.02.76 2.06v3.05c0 .3.2.64.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
